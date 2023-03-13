@@ -1,3 +1,6 @@
+/* Import scss colors (./styles/configs/colors.scss) */
+@import './styles/configs/colors';
+
 /* Import scss typography (./styles/configs/typography.scss) */
 @import './styles/configs/typography';
 
@@ -18,5 +21,6 @@ body {
 }
 
 a {
+  color: $eerieBlack;
   text-decoration: none;
 }
