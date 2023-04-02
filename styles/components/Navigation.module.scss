@@ -1,0 +1,52 @@
+/* Import scss colors (./styles/configs/colors.scss) */
+@import './styles/configs/colors';
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 10vh;
+
+  margin: 1em 1em;
+  padding: 1em;
+
+  border-bottom: 1px solid $platinum;
+  border-top: 1px solid $platinum;
+  border-radius: 1em;
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+  }
+
+  .header {
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  .link {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+
+    transition: 180ms ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(0.8);
+      text-decoration: underline;
+    }
+
+    &:active {
+      transform: scale(0.6);
+    }
+  }
+}
