@@ -1,0 +1,67 @@
+/* Import scss colors (./styles/configs/colors.scss) */
+@import './styles/configs/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1em;
+
+  min-width: 16vw;
+  max-width: 24vw;
+  min-height: 32vh;
+  max-height: none;
+
+  text-align: center;
+
+  padding: 2em;
+
+  background-color: $platinum;
+
+  border: none;
+  border-radius: 1em;
+
+  box-shadow: $roseQuartz 2px 2px 2px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: 180ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transition: 180ms;
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  .header {
+    font-size: 1.4em;
+    font-weight: 600;
+
+    border-bottom: 1px solid $jasmine;
+  }
+
+  .description {
+    color: $battleshipGrey;
+
+    font-size: 0.8em;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    min-width: 32vw;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    min-width: 60vw;
+  }
+}
