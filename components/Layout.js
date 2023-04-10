@@ -4,6 +4,9 @@ import Head from 'next/head';
 /* Components */
 import Navigation from '@/components/Navigaiton';
 
+/* Styles */
+import styles from '@/styles/components/Layout.module.scss';
+
 /* Fonts */
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
@@ -20,8 +23,10 @@ export default function Layout({ children }) {
         */}
         <title>Order</title>
       </Head>
-      <Navigation />
-      <main className={inter.className}>{children}</main>
+      <div className={styles.app}>
+        <Navigation />
+        <main className={inter.className}>{children}</main>
+      </div>
     </>
   );
 }
