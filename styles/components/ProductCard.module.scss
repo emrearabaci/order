@@ -62,6 +62,6 @@
 
 @media screen and (max-width: 575px) {
   .container {
-    min-width: 60vw;
+    max-width: max-content;
   }
 }
